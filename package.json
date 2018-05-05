@@ -1,0 +1,29 @@
+{
+  "name": "coupon-landing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Silverhill/coupon-landing.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Silverhill/coupon-landing/issues"
+  },
+  "homepage": "https://github.com/Silverhill/coupon-landing#readme",
+  "dependencies": {
+    "@zeit/next-sass": "^0.1.2",
+    "next": "^6.0.0",
+    "node-sass": "^4.9.0",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2"
+  }
+}
