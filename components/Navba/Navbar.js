@@ -3,15 +3,15 @@ import Link from 'next/link';
 
 import "./index.scss";
 
-class Navba extends PureComponent {
+class Navbar extends PureComponent {
   render() {
     return (
       <div>
         <header className="menu">
-          <input type="checkbox" id="btn-menu"/>
-          <label For="btn-menu" className="btn-label">Menu</label>
-          <nav className="menuBarra">
-            <ul className="menuContainer">
+          <input id="menu__btn" type="checkbox" />
+          <label className="menu__btnLabel" htmlFor="menu__btn">Menu</label>
+          <nav className="menu__bar">
+            <ul className="bar__container">
               <li>
                 <Link prefetch href="http://localhost:3000/">
                   <a className="link">Home</a>
@@ -35,11 +35,9 @@ class Navba extends PureComponent {
             </ul>
           </nav>
         </header>
-
       </div>
-
     );
   }
 }
 
-export default Navba;
+export default Navbar;

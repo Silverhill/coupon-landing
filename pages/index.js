@@ -1,14 +1,13 @@
 import React, { PureComponent } from 'react';
 import Link from 'next/link';
 
-//Components
-import Navba from '../components/Navba/Navba';
+import Navbar from '../components/Navba/Navbar';
 
 class Home extends PureComponent {
   render() {
     return (
       <div>
-        <Navba />
+        <Navbar />
       </div>
     );
   }
