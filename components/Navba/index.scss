@@ -1,0 +1,88 @@
+body{
+  padding: 0px;
+  margin: 0px;
+}
+.menuBarra{
+  background-color:#2b2b2b;
+  display: flex;
+  justify-content: center;
+	color: #777777;
+	font-size: 23px;
+  width: 100%;
+  .menuContainer{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    display: inherit;
+    align-items: center;
+    .link{
+      text-decoration: none;
+      font-size: 16px;
+      display: block;
+      padding: 15px 20px;
+      box-sizing: border-box;
+      text-transform: uppercase;
+      color: white;
+    }
+  }
+}
+
+.menuContainer li:hover{
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.menuBarra .link:hover{
+  color:#f6f6f6;
+}
+
+.menuBarra .link:active{
+  color: #f6f6f6;
+}
+
+#btn-menu{
+  display: none;
+}
+
+
+.menu .btn-label{
+  display: none;
+  align-items: center;
+  width: 40px;
+  height: 30px;
+  padding: 10px;
+  border: 1px solid black;
+}
+.menu .btn-label:hover{
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.5)
+}
+
+@media (max-width: 575.98px) {
+  .menu .btn-label{
+    display: flex;
+  }
+
+  .menuBarra{
+    position: absolute;
+    width: 100%;
+    margin-left: -100%;
+    transition: all 0.5s;
+  }
+
+  .menuBarra .menuContainer{
+    flex-direction: column;
+  }
+
+  .menuBarra{
+    display: block;
+  }
+
+  .menuBarra li {
+    text-align: center;
+  }
+
+  #btn-menu:checked ~ .menuBarra{
+    margin: 0px;
+  }
+
+}
