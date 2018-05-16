@@ -19,10 +19,10 @@
 
 * abrir terminar.
 * clonar el repositorio `git clone git@github.com:Silverhill/coupon-landing.git`.
-* ingresar a  `cd coupon-landing`.
+* ingresar a `cd coupon-landing`.
 * version node => `v8.11.1`.
-* comando de instalación. =>  `npm install`.
-* comando para iniciar el proyecto. =>  `npm run dev`.
+* comando de instalación. => `npm install`.
+* comando para iniciar el proyecto. => `npm run dev`.
 * navegar a [http://localhost:3000/](http://localhost:3000/)
 
 ### Estructura de archivos del proyecto
