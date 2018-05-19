@@ -25,6 +25,14 @@ const defaults = {
   ]
 }
 
+const NavbarLink = ({ href, label }) => (
+  <li>
+    <Link prefetch href={href}>
+      <a className={styles.link}>{label}</a>
+    </Link>
+  </li>
+)
+
 class Navbar extends PureComponent {
   render() {
     return (
@@ -36,12 +44,11 @@ class Navbar extends PureComponent {
             <ul className={styles.barContainer}>
             {(defaults.links || []).map((link, i) => {
               return (
-                <li>
-                  <Link prefetch href={link.href}>
-                    <a className={styles.link}>{link.label}</a>
-                  </Link>
-                </li>
-              )
+                <NavbarLink
+                  key={`${link.label}-${i}`}
+                  href={link.href}
+                  label={link.label}
+                />)
             })}
             </ul>
           </nav>

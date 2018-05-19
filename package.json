@@ -21,9 +21,15 @@
   "homepage": "https://github.com/Silverhill/coupon-landing#readme",
   "dependencies": {
     "@zeit/next-sass": "^0.1.2",
+    "apollo-boost": "^0.1.6",
+    "graphql": "^0.13.2",
+    "graphql-tag": "^2.9.2",
+    "isomorphic-unfetch": "^2.0.0",
     "next": "^6.0.0",
     "node-sass": "^4.9.0",
+    "prop-types": "^15.6.1",
     "react": "^16.3.2",
+    "react-apollo": "^2.1.4",
     "react-dom": "^16.3.2"
   }
 }
