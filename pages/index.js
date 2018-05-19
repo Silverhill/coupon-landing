@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 import Link from 'next/link';
 
-import Navbar from '../components/Navba/Navbar';
+import Navbar from '../components/Navbar/Navbar';
 
 class Home extends PureComponent {
   render() {

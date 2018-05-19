@@ -1,2 +1,8 @@
 const withSass = require('@zeit/next-sass')
-module.exports = withSass()
+module.exports = withSass({
+  cssModules: true,
+  cssLoaderOptions: {
+    importLoaders: 1,
+    localIdentName: "[name]_[local]___[hash:base64:5]",
+  }
+})
